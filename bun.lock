@@ -5,7 +5,7 @@
     "": {
       "name": "bun-react-template",
       "dependencies": {
-        "@omuso/react-reader": "^0.2.3",
+        "@omuso/react-reader": "^0.2.4",
         "react": "^19",
         "react-dom": "^19",
       },
@@ -20,7 +20,7 @@
     },
   },
   "packages": {
-    "@omuso/react-reader": ["@omuso/react-reader@0.2.3", "", { "dependencies": { "omuso": "^1.6.0" }, "peerDependencies": { "react": "^18 || ^19", "typescript": "^5" } }, "sha512-Se9tD9uluzZqLDh0ubpS+WsCZif44VO4T6wRFmrN71awmEn6UhIAmBaRTKsKsE8LodEc0WZ5D0+DBcOpZQkEoA=="],
+    "@omuso/react-reader": ["@omuso/react-reader@0.2.4", "", { "dependencies": { "omuso": "^1.6.0" }, "peerDependencies": { "react": "^18 || ^19", "typescript": "^5" } }, "sha512-C1JIyE8kqbt23EyL7CwvSwfOykmXIWTfWLY3q5xKc+wNsBb2My3xz+8gUpyUrnPJxlgEE1cCYI0Dx/g19J33Lw=="],
 
     "@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 

@@ -1,14 +1,14 @@
 import { Reader, type ReaderProps } from "@omuso/react-reader";
-import { context } from "omuso";
+import { createContext } from "omuso";
 import en from "../.content/en.md" with { type: "text" };
 import ru from "../.content/ru.md" with { type: "text" };
 
 import "./index.css";
 
 const config = {
-	context: context.init({
+	context: createContext().init({
 		markdowns: { en, ru },
-		defaultLanguage: "en",
+		slugStyle: "wiki",
 	}),
 	language: "en",
 	basePath: "/The_Pathway_of_Life",

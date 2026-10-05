@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "bun --hot src/index.ts",
-		"build:bundle": "bun build ./src/index.html --outdir=dist --sourcemap --target=browser --minify --define:process.env.NODE_ENV='\"production\"' --env='BUN_PUBLIC_*'",
+		"build:bundle": "bun build ./src/index.html --outdir=dist --sourcemap --target=browser --minify --public-path=/The_Pathway_of_Life/ --define:process.env.NODE_ENV='\"production\"' --env='BUN_PUBLIC_*'",
 		"build:spa-fallback": "cp dist/index.html dist/404.html",
 		"build": "bun run build:bundle && bun run build:spa-fallback",
 		"start": "NODE_ENV=production bun src/index.ts"

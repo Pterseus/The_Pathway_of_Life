@@ -1,12 +1,8 @@
-:root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-
 body {
 	margin: 0;
-	background-color: var(--or-background);
+	background-color: var(--om-background);
 }
 
-.omuso-reader.or-layout {
+#root {
 	height: 100dvh;
 }

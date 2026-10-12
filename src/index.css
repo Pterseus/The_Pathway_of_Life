@@ -1,10 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+	--font-body: "Playfair", serif;
+	--font-heading: "Playfair Display SC", serif;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 
 body {
 	margin: 0;
 	background-color: var(--om-background);
+
+	[data-omuso-theme="dark"] & {
+		--om-background: #0b0a09;
+		--om-foreground: #dad5d2;
+		--om-dividers: #1f1f1f;
+	}
+
+	&:has(.om-cover) {
+		--om-background: #032c53;
+		--om-foreground: #d2dee9;
+		--om-dividers: #0a3764;
+
+		[data-omuso-theme="dark"] & {
+			--om-background: #02203c;
+			--om-dividers: #0a376430;
+		}
+	}
 }
 
 #root {
 	height: 100dvh;
+}
+
+.om-paragraph {
+	font-family: var(--font-body);
+}
+
+.om-cover__title,
+.om-header__title,
+nav > ul > li > div > .om-toc__link,
+.om-breadcrumb__item,
+.om-heading,
+.om-section-index__link {
+	text-transform: uppercase;
+	font-family: var(--font-heading) !important;
+	font-weight: normal !important;
+}
+
+body:has(.om-reader),
+.om-content {
+	position: relative;
+}
+
+body:has(.om-reader)::before,
+body:has(.om-reader)::after,
+.om-cover::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	width: 100dvw;
+	height: 100dvh;
+	pointer-events: none;
+	z-index: 10;
+}
+
+html:has(.om-reader):has(.om-cover)::after {
+	background-image: url("./assets/textures/large-leather.png");
+	background-repeat: repeat;
+	background-size: 28vh;
+	background-blend-mode: hard-light;
+	opacity: 0.2;
+}
+
+.om-cover::after {
+	background-image: url("./assets/textures/large-leather.png");
+	background-repeat: repeat;
+	background-size: 28vh;
+	mix-blend-mode: screen;
+	opacity: 0.15;
+}
+
+body:has(.om-reader):not(:has(:has(.om-cover)))::after {
+	background-image: url("./assets/textures/otis-redding.png");
+	background-repeat: repeat;
+	background-blend-mode: hard-light;
+	opacity: 0.3;
 }

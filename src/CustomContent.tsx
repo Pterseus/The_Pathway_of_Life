@@ -106,7 +106,6 @@ export default function CustomContent({
 								key={item.path}
 								id={item.path}
 								value={Reader.applyMarks(item.value, item.marks, search.query)}
-								className="text-sm"
 							/>
 						);
 					return null;

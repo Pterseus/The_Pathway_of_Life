@@ -5,7 +5,8 @@
     "": {
       "name": "bun-react-template",
       "dependencies": {
-        "@omuso/react-reader": "^0.3.1",
+        "@omuso/react-reader": "^0.4.2",
+        "omuso": "^1.8.0",
         "react": "^19",
         "react-dom": "^19",
       },
@@ -20,7 +21,7 @@
     },
   },
   "packages": {
-    "@omuso/react-reader": ["@omuso/react-reader@0.3.1", "", { "dependencies": { "omuso": "^1.7.0" }, "peerDependencies": { "react": "^18 || ^19" } }, "sha512-TTbjJjS51dvnKU3e/rPTY1AC9sV+W9ADmzpCaupdALzF+kK1ZNX36AZjBHV4s5ZahuEr7A/OtnHi54veNh3bfw=="],
+    "@omuso/react-reader": ["@omuso/react-reader@0.4.2", "", { "peerDependencies": { "omuso": "^1.8.0", "react": "^18 || ^19" } }, "sha512-wvvaNM9u8+4sdqhwLVe9DskSjnPQUmMv2IVUw+uRxZWe5vKIBcOeizKh6rkfMidV7qlt4ap4lgAPSuRV4AsGoQ=="],
 
     "@oven/bun-darwin-aarch64": ["@oven/bun-darwin-aarch64@1.4.2", "", { "os": "darwin", "cpu": "arm64" }, "sha512-MXdZkP1featqxZ+/VTXWG1BVjM4OGBehVY2Q88EeUj/7L0UMeCGItmyPYTN+wxvlGJ6F66JEtzsw+GvQWewnag=="],
 
@@ -102,7 +103,7 @@
 
     "csstype": ["csstype@3.2.3", "", {}, "sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ=="],
 
-    "omuso": ["omuso@1.7.0", "", {}, "sha512-eRA9F/bqd8loJI0iG5CTth9YmEWRZYzDNIGhPR8g1oNP/+u3JGKr3UfyixgWGf4WvuGtRqeWtkGU/aew1Kop8w=="],
+    "omuso": ["omuso@1.8.0", "", {}, "sha512-0/K6ENuz0fZ4hdRo8GYEW+i1Z7OPSjgmNeORenevOckbqW+obUz9zMqIC6a8BpQCMflWR+qhagcLstLJVn2RWQ=="],
 
     "react": ["react@19.3.0", "", {}, "sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog=="],
 

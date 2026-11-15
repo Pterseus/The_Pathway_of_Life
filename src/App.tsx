@@ -7,7 +7,7 @@ import CustomContent from "./CustomContent";
 import "./index.css";
 
 const config = {
-	context: createContext().init({
+	context: createContext({
 		markdowns: { en, ru },
 		slugStyle: "wiki",
 		maxNavigationDepth: 2,
@@ -15,7 +15,7 @@ const config = {
 	language: "en",
 	basePath: "/The_Pathway_of_Life",
 	contentComponent: CustomContent,
-} as ReaderProps;
+} satisfies ReaderProps;
 
 export function App() {
 	return <Reader {...config} />;

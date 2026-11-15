@@ -105,7 +105,7 @@ export default function CustomContent({
 							<Reader.ReaderParagraph
 								key={item.path}
 								id={item.path}
-								value={Reader.highlightMatches(item.value, search.query)}
+								value={Reader.applyMarks(item.value, item.marks, search.query)}
 								className="text-sm"
 							/>
 						);
